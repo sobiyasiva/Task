@@ -1,0 +1,142 @@
+
+*{
+  margin:0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin:0;
+  padding:0; 
+}
+html{
+  height:100%;
+}
+h2 {
+  height:3%;
+  text-align: center;
+  font-size: 16px;
+}
+form {
+  height:97%;
+  width:70%;
+  font-size:10px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  background: linear-gradient(104.3deg, rgb(253, 243, 243) 10.9%, rgb(248, 231, 231) 27.8%, rgb(160, 112, 161) 101.7%);
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.dob {
+  display: flex;
+}
+.dob select {
+      flex: 1;
+  margin-right: 5px;
+}
+input[type="radio"],
+  input[type="checkbox"] {
+    margin:5px;
+  }
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  margin:3px;
+  width: 50%;
+  padding: 2px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.buttons {
+  text-align: center;
+}
+input[type="submit"],
+input[type="reset"] {
+  font-weight: bold;
+  padding: 10px 50px;
+  margin: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: pink;
+}
+.helper-text {
+  margin-left:5px;
+  font-size: 10px;
+  color: black;
+  font-weight: lighter;
+}
+.edu th, .edu td {
+  border: 1px solid white;
+  padding: 5px ;
+  text-align: center;
+}
+label {
+  color: black;
+}
+@media (max-width: 600px) {
+  form {
+      padding: 10px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  td {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea,
+  select {
+    width: 80%;
+  }
+  textarea{
+    height:80px;
+  }
+  .dob {
+      display: flex;
+      flex-direction: column;
+  }
+  .buttons {
+      display: flex;
+      flex-direction: column;
+  }
+  .buttons input {
+      margin-bottom: 10px;
+  }
+    td{
+      margin: 1px;
+     }
+  .helper-text {
+    margin-left:50px;
+  }
+  .edu th,.edu td{
+    margin-top: 10px;
+    display:table-cell;
+    padding:5px;
+  }
+  input[type="text"].box{
+    width:90%;
+  }
+  table{
+    width:90%;
+  }
+}
